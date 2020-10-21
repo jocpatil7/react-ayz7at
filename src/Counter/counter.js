@@ -21,6 +21,7 @@ class Counter extends React.Component {
     this.setState({ counterValue: value });
     console.log(value);
     //alert("I am Decrement Click " + value);
+    
   };
   render() {
     return (
@@ -28,14 +29,14 @@ class Counter extends React.Component {
         <DisplayCounter counterValue={this.state.counterValue} />
         <input
           type="button"
-          value="Increment"
+          value="+"
           onClick={value => this.onIncrementClick(this.state.counterValue)}
         />
         <br />
         <br />
         <input
           type="button"
-          value="Decrement"
+          value="-"
           onClick={value => this.onDecrementClick(this.state.counterValue)}
         />
       </React.Fragment>
